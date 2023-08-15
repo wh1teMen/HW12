@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ_Обработка форм</title>
+    <link rel="stylesheet" href="styles/mian.css">
+</head>
+<body>  
+    <div class="window">
+        <div class="windowView"></div>          
+        <div class="windowMsg">
+            <form action="#" id="Messeg" method="post" name="formM">
+                <div class="windowMsgTitle">
+                    <h3>Add new messages</h3>
+                </div>
+                <div class="windowMsgName-box">
+                    <div class="nameUser">
+                        <div class="windowMsgName-Name">
+                            <label for="name">*Your name:</label>
+                        </div>
+                        <div class="windowMsgName-Text">
+                            <input placeholder="Ваше имя" type="text" name="name" id="windowMsg-name" required>
+                        </div>
+                    </div>
+                    <div class="textMsg">
+                        <div class="windowMsgLableTitle">
+                            <label for="message">*Your message:</label>
+                        </div>
+                        <div class="windowMsg-Text">
+                            <textarea placeholder="Ваше сообщение" name="messege" id="windowMsg-msg"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="btn">
+                <button type="submit" id="windowMsgSend" disabled="true" >Send</button>
+            </div>         
+        </div>
+        <script src="scripts/main.js"></script>
+    </div>
+</body>
+
+</html>
